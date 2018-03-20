@@ -1,0 +1,1650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2208017D2018A99600ABC9F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208017C2018A99600ABC9F5 /* AppDelegate.m */; };
+		220801832018A99600ABC9F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220801812018A99600ABC9F5 /* Main.storyboard */; };
+		220801852018A99600ABC9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220801842018A99600ABC9F5 /* Assets.xcassets */; };
+		220801882018A99600ABC9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220801862018A99600ABC9F5 /* LaunchScreen.storyboard */; };
+		2208018B2018A99600ABC9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208018A2018A99600ABC9F5 /* main.m */; };
+		220801952018A99600ABC9F5 /* ZGMailboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801942018A99600ABC9F5 /* ZGMailboxTests.m */; };
+		220801A02018A99600ABC9F5 /* ZGMailboxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208019F2018A99600ABC9F5 /* ZGMailboxUITests.m */; };
+		220801AF2018B07D00ABC9F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801AD2018B07D00ABC9F5 /* LoginViewController.m */; };
+		2208027E2018B08500ABC9F5 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801B32018B08500ABC9F5 /* UIView+Addition.m */; };
+		2208027F2018B08500ABC9F5 /* UIColor+colorWIthHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801B72018B08500ABC9F5 /* UIColor+colorWIthHex.m */; };
+		220802812018B08500ABC9F5 /* NSString+Mail.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801BA2018B08500ABC9F5 /* NSString+Mail.m */; };
+		220802822018B08500ABC9F5 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801BE2018B08500ABC9F5 /* UIViewController+HUD.m */; };
+		220802832018B08500ABC9F5 /* NSDate+DDAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801C12018B08500ABC9F5 /* NSDate+DDAddition.m */; };
+		220802842018B08500ABC9F5 /* ZGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801C62018B08500ABC9F5 /* ZGConst.m */; };
+		220802852018B08500ABC9F5 /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801CC2018B08500ABC9F5 /* HPGrowingTextView.m */; };
+		220802862018B08500ABC9F5 /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801CD2018B08500ABC9F5 /* HPTextViewInternal.m */; };
+		220802872018B08500ABC9F5 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801D02018B08500ABC9F5 /* RSA.m */; };
+		220802882018B08500ABC9F5 /* MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801D82018B08500ABC9F5 /* MWPhotoBrowser.m */; };
+		220802892018B08500ABC9F5 /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801D92018B08500ABC9F5 /* MWCaptionView.m */; };
+		2208028A2018B08500ABC9F5 /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801DC2018B08500ABC9F5 /* MWZoomingScrollView.m */; };
+		2208028B2018B08500ABC9F5 /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801DD2018B08500ABC9F5 /* UIImage+MWPhotoBrowser.m */; };
+		2208028C2018B08500ABC9F5 /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801DF2018B08500ABC9F5 /* MWTapDetectingImageView.m */; };
+		2208028D2018B08500ABC9F5 /* MWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801E02018B08500ABC9F5 /* MWPhoto.m */; };
+		2208028E2018B08500ABC9F5 /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801E12018B08500ABC9F5 /* MWTapDetectingView.m */; };
+		2208028F2018B08500ABC9F5 /* MWGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801E32018B08500ABC9F5 /* MWGridViewController.m */; };
+		220802902018B08500ABC9F5 /* MWGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220801E62018B08500ABC9F5 /* MWGridCell.m */; };
+		220802912018B08500ABC9F5 /* UIBarButtonItemArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801EA2018B08500ABC9F5 /* UIBarButtonItemArrowLeft.png */; };
+		220802922018B08500ABC9F5 /* UIBarButtonItemGrid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801EB2018B08500ABC9F5 /* UIBarButtonItemGrid@3x.png */; };
+		220802932018B08500ABC9F5 /* ImageSelectedSmallOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801EC2018B08500ABC9F5 /* ImageSelectedSmallOn.png */; };
+		220802942018B08500ABC9F5 /* UIBarButtonItemGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801ED2018B08500ABC9F5 /* UIBarButtonItemGrid.png */; };
+		220802952018B08500ABC9F5 /* UIBarButtonItemGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801EE2018B08500ABC9F5 /* UIBarButtonItemGrid@2x.png */; };
+		220802962018B08500ABC9F5 /* VideoOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801EF2018B08500ABC9F5 /* VideoOverlay@2x.png */; };
+		220802972018B08500ABC9F5 /* ImageSelectedOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F02018B08500ABC9F5 /* ImageSelectedOff.png */; };
+		220802982018B08500ABC9F5 /* PlayButtonOverlayLargeTap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F12018B08500ABC9F5 /* PlayButtonOverlayLargeTap@2x.png */; };
+		220802992018B08500ABC9F5 /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F22018B08500ABC9F5 /* ImageError@2x.png */; };
+		2208029A2018B08500ABC9F5 /* ImageSelectedSmallOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F32018B08500ABC9F5 /* ImageSelectedSmallOff@2x.png */; };
+		2208029B2018B08500ABC9F5 /* ImageSelectedSmallOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F42018B08500ABC9F5 /* ImageSelectedSmallOff@3x.png */; };
+		2208029C2018B08500ABC9F5 /* PlayButtonOverlayLargeTap.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F52018B08500ABC9F5 /* PlayButtonOverlayLargeTap.png */; };
+		2208029D2018B08500ABC9F5 /* ImageError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F62018B08500ABC9F5 /* ImageError@3x.png */; };
+		2208029E2018B08500ABC9F5 /* PlayButtonOverlayLargeTap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F72018B08500ABC9F5 /* PlayButtonOverlayLargeTap@3x.png */; };
+		2208029F2018B08500ABC9F5 /* UIBarButtonItemArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F82018B08500ABC9F5 /* UIBarButtonItemArrowRight.png */; };
+		220802A02018B08500ABC9F5 /* VideoOverlay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801F92018B08500ABC9F5 /* VideoOverlay@3x.png */; };
+		220802A12018B08500ABC9F5 /* ImageError.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801FA2018B08500ABC9F5 /* ImageError.png */; };
+		220802A22018B08500ABC9F5 /* UIBarButtonItemArrowRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801FB2018B08500ABC9F5 /* UIBarButtonItemArrowRight@3x.png */; };
+		220802A32018B08500ABC9F5 /* ImageSelectedOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801FC2018B08500ABC9F5 /* ImageSelectedOn.png */; };
+		220802A42018B08500ABC9F5 /* PlayButtonOverlayLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801FD2018B08500ABC9F5 /* PlayButtonOverlayLarge@2x.png */; };
+		220802A52018B08500ABC9F5 /* ImageSelectedOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801FE2018B08500ABC9F5 /* ImageSelectedOff@2x.png */; };
+		220802A62018B08500ABC9F5 /* UIBarButtonItemArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220801FF2018B08500ABC9F5 /* UIBarButtonItemArrowLeft@2x.png */; };
+		220802A72018B08500ABC9F5 /* VideoOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802002018B08500ABC9F5 /* VideoOverlay.png */; };
+		220802A82018B08500ABC9F5 /* ImageSelectedSmallOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802012018B08500ABC9F5 /* ImageSelectedSmallOff.png */; };
+		220802A92018B08500ABC9F5 /* UIBarButtonItemArrowLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802022018B08500ABC9F5 /* UIBarButtonItemArrowLeft@3x.png */; };
+		220802AA2018B08500ABC9F5 /* ImageSelectedOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802032018B08500ABC9F5 /* ImageSelectedOff@3x.png */; };
+		220802AB2018B08500ABC9F5 /* PlayButtonOverlayLarge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802042018B08500ABC9F5 /* PlayButtonOverlayLarge@3x.png */; };
+		220802AC2018B08500ABC9F5 /* UIBarButtonItemArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802052018B08500ABC9F5 /* UIBarButtonItemArrowRight@2x.png */; };
+		220802AD2018B08500ABC9F5 /* ImageSelectedSmallOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802062018B08500ABC9F5 /* ImageSelectedSmallOn@3x.png */; };
+		220802AE2018B08500ABC9F5 /* PlayButtonOverlayLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802072018B08500ABC9F5 /* PlayButtonOverlayLarge.png */; };
+		220802AF2018B08500ABC9F5 /* ImageSelectedOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802082018B08500ABC9F5 /* ImageSelectedOn@3x.png */; };
+		220802B02018B08500ABC9F5 /* ImageSelectedOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220802092018B08500ABC9F5 /* ImageSelectedOn@2x.png */; };
+		220802B12018B08500ABC9F5 /* ImageSelectedSmallOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2208020A2018B08500ABC9F5 /* ImageSelectedSmallOn@2x.png */; };
+		220802B22018B08500ABC9F5 /* TMReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208020C2018B08500ABC9F5 /* TMReachability.m */; };
+		220802B32018B08500ABC9F5 /* FTPopOverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802102018B08500ABC9F5 /* FTPopOverMenu.m */; };
+		220802B42018B08500ABC9F5 /* ZGMailMessageSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802172018B08500ABC9F5 /* ZGMailMessageSearchViewController.m */; };
+		220802B52018B08500ABC9F5 /* ZGRoundSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208021A2018B08500ABC9F5 /* ZGRoundSearchBar.m */; };
+		220802B62018B08500ABC9F5 /* ZGMessageAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802202018B08500ABC9F5 /* ZGMessageAttachmentViewController.m */; };
+		220802B72018B08500ABC9F5 /* ZGAttachmentDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802232018B08500ABC9F5 /* ZGAttachmentDownloadView.m */; };
+		220802B82018B08500ABC9F5 /* ZGMailRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802282018B08500ABC9F5 /* ZGMailRecord.m */; };
+		220802B92018B08500ABC9F5 /* ZGMailMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802292018B08500ABC9F5 /* ZGMailMessage.m */; };
+		220802BA2018B08500ABC9F5 /* ZGMailModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208022B2018B08500ABC9F5 /* ZGMailModule.m */; };
+		220802BB2018B08500ABC9F5 /* ZGSendingMailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208022F2018B08500ABC9F5 /* ZGSendingMailListViewController.m */; };
+		220802BC2018B08500ABC9F5 /* ZGMailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802312018B08500ABC9F5 /* ZGMailListViewController.m */; };
+		220802BD2018B08500ABC9F5 /* ZGMailListTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802332018B08500ABC9F5 /* ZGMailListTitleView.m */; };
+		220802BE2018B08500ABC9F5 /* ZGMailListCellPortraitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802382018B08500ABC9F5 /* ZGMailListCellPortraitView.m */; };
+		220802BF2018B08500ABC9F5 /* ZGMailListBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802392018B08500ABC9F5 /* ZGMailListBottomToolBar.m */; };
+		220802C02018B08500ABC9F5 /* ZGMailListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208023A2018B08500ABC9F5 /* ZGMailListTableViewCell.m */; };
+		220802C12018B08500ABC9F5 /* ZGMailAttachmetPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208023D2018B08500ABC9F5 /* ZGMailAttachmetPhoto.m */; };
+		220802C22018B08500ABC9F5 /* ZGNewMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802412018B08500ABC9F5 /* ZGNewMailViewController.m */; };
+		220802C32018B08500ABC9F5 /* ZGAddAttachmentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802452018B08500ABC9F5 /* ZGAddAttachmentCollectionViewCell.m */; };
+		220802C42018B08500ABC9F5 /* ZGWriteMailFileAttachmentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802462018B08500ABC9F5 /* ZGWriteMailFileAttachmentCollectionViewCell.m */; };
+		220802C52018B08500ABC9F5 /* ZGWriteMailAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802472018B08500ABC9F5 /* ZGWriteMailAttachmentView.m */; };
+		220802C62018B08500ABC9F5 /* ZGWriteMailImageAttachmentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208024C2018B08500ABC9F5 /* ZGWriteMailImageAttachmentCollectionViewCell.m */; };
+		220802C72018B08500ABC9F5 /* ZGMailAddressFlowEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802502018B08500ABC9F5 /* ZGMailAddressFlowEditView.m */; };
+		220802C82018B08500ABC9F5 /* ZGSenderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802522018B08500ABC9F5 /* ZGSenderButton.m */; };
+		220802C92018B08500ABC9F5 /* ZGMailAddressTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802542018B08500ABC9F5 /* ZGMailAddressTextField.m */; };
+		220802CA2018B08500ABC9F5 /* ZGMailAddressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802562018B08500ABC9F5 /* ZGMailAddressButton.m */; };
+		220802CB2018B08500ABC9F5 /* ZGComposeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802572018B08500ABC9F5 /* ZGComposeHeaderView.m */; };
+		220802CC2018B08500ABC9F5 /* ZGSubjectEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802592018B08500ABC9F5 /* ZGSubjectEditView.m */; };
+		220802CD2018B08500ABC9F5 /* ZGSendMailTopIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208025B2018B08500ABC9F5 /* ZGSendMailTopIndicator.m */; };
+		220802CE2018B08500ABC9F5 /* MCOCIDURLProtocol.mm in Sources */ = {isa = PBXBuildFile; fileRef = 220802602018B08500ABC9F5 /* MCOCIDURLProtocol.mm */; };
+		220802CF2018B08500ABC9F5 /* ZGMailMessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802632018B08500ABC9F5 /* ZGMailMessageDetailViewController.m */; };
+		220802D02018B08500ABC9F5 /* ZGAddressShadowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802692018B08500ABC9F5 /* ZGAddressShadowButton.m */; };
+		220802D12018B08500ABC9F5 /* ZGMailMessageHeaderDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208026A2018B08500ABC9F5 /* ZGMailMessageHeaderDetailView.m */; };
+		220802D22018B08500ABC9F5 /* ZGMailMessageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208026C2018B08500ABC9F5 /* ZGMailMessageHeaderView.m */; };
+		220802D32018B08500ABC9F5 /* ZGMessageAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208026E2018B08500ABC9F5 /* ZGMessageAttachmentView.m */; };
+		220802D42018B08500ABC9F5 /* ZGMessageHeaderDetailTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208026F2018B08500ABC9F5 /* ZGMessageHeaderDetailTimeTableViewCell.m */; };
+		220802D52018B08500ABC9F5 /* ZGMessageHeaderDetailAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802702018B08500ABC9F5 /* ZGMessageHeaderDetailAddressTableViewCell.m */; };
+		220802D62018B08500ABC9F5 /* ZGAttachmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802712018B08500ABC9F5 /* ZGAttachmentTableViewCell.m */; };
+		220802D72018B08500ABC9F5 /* MCOMessageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 220802722018B08500ABC9F5 /* MCOMessageView.mm */; };
+		220802D82018B08500ABC9F5 /* ZGMessageHeaderDetailAttachmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220802762018B08500ABC9F5 /* ZGMessageHeaderDetailAttachmentTableViewCell.m */; };
+		220802D92018B08500ABC9F5 /* ZGMailContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208027B2018B08500ABC9F5 /* ZGMailContactsDetailViewController.m */; };
+		3C30144CCD4FAC9D53A47463 /* libPods-ZGMailbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F95C42653FECC5B3D68291B7 /* libPods-ZGMailbox.a */; };
+		3DEE6B73C6350E3F1CF8C193 /* libPods-ZGMailboxUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6593A8B07F75BBC0E41D69E /* libPods-ZGMailboxUITests.a */; };
+		8F824DDF0398D526947DD51A /* libPods-ZGMailboxTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 810B253D182EE90ABCFE28C7 /* libPods-ZGMailboxTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220801912018A99600ABC9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220801702018A99600ABC9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220801772018A99600ABC9F5;
+			remoteInfo = ZGMailbox;
+		};
+		2208019C2018A99600ABC9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220801702018A99600ABC9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220801772018A99600ABC9F5;
+			remoteInfo = ZGMailbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081313902924B0597966A364 /* Pods-ZGMailbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGMailbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGMailbox/Pods-ZGMailbox.release.xcconfig"; sourceTree = "<group>"; };
+		220801782018A99600ABC9F5 /* ZGMailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGMailbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2208017B2018A99600ABC9F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2208017C2018A99600ABC9F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		220801822018A99600ABC9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		220801842018A99600ABC9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		220801872018A99600ABC9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		220801892018A99600ABC9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2208018A2018A99600ABC9F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		220801902018A99600ABC9F5 /* ZGMailboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZGMailboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220801942018A99600ABC9F5 /* ZGMailboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMailboxTests.m; sourceTree = "<group>"; };
+		220801962018A99600ABC9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2208019B2018A99600ABC9F5 /* ZGMailboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZGMailboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2208019F2018A99600ABC9F5 /* ZGMailboxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMailboxUITests.m; sourceTree = "<group>"; };
+		220801A12018A99600ABC9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220801AD2018B07D00ABC9F5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		220801AE2018B07D00ABC9F5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		220801B32018B08500ABC9F5 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		220801B42018B08500ABC9F5 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		220801B62018B08500ABC9F5 /* UIColor+colorWIthHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+colorWIthHex.h"; sourceTree = "<group>"; };
+		220801B72018B08500ABC9F5 /* UIColor+colorWIthHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+colorWIthHex.m"; sourceTree = "<group>"; };
+		220801BA2018B08500ABC9F5 /* NSString+Mail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Mail.m"; sourceTree = "<group>"; };
+		220801BC2018B08500ABC9F5 /* NSString+Mail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Mail.h"; sourceTree = "<group>"; };
+		220801BE2018B08500ABC9F5 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		220801BF2018B08500ABC9F5 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		220801C12018B08500ABC9F5 /* NSDate+DDAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DDAddition.m"; sourceTree = "<group>"; };
+		220801C22018B08500ABC9F5 /* NSDate+DDAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DDAddition.h"; sourceTree = "<group>"; };
+		220801C42018B08500ABC9F5 /* ZGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGConst.h; sourceTree = "<group>"; };
+		220801C52018B08500ABC9F5 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		220801C62018B08500ABC9F5 /* ZGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGConst.m; sourceTree = "<group>"; };
+		220801C72018B08500ABC9F5 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		220801C82018B08500ABC9F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		220801CB2018B08500ABC9F5 /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPTextViewInternal.h; sourceTree = "<group>"; };
+		220801CC2018B08500ABC9F5 /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPGrowingTextView.m; sourceTree = "<group>"; };
+		220801CD2018B08500ABC9F5 /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTextViewInternal.m; sourceTree = "<group>"; };
+		220801CE2018B08500ABC9F5 /* HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPGrowingTextView.h; sourceTree = "<group>"; };
+		220801D02018B08500ABC9F5 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		220801D12018B08500ABC9F5 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		220801D42018B08500ABC9F5 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingImageView.h; sourceTree = "<group>"; };
+		220801D52018B08500ABC9F5 /* MWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhoto.h; sourceTree = "<group>"; };
+		220801D62018B08500ABC9F5 /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoProtocol.h; sourceTree = "<group>"; };
+		220801D72018B08500ABC9F5 /* MWGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWGridViewController.h; sourceTree = "<group>"; };
+		220801D82018B08500ABC9F5 /* MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowser.m; sourceTree = "<group>"; };
+		220801D92018B08500ABC9F5 /* MWCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCaptionView.m; sourceTree = "<group>"; };
+		220801DA2018B08500ABC9F5 /* MWTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingView.h; sourceTree = "<group>"; };
+		220801DB2018B08500ABC9F5 /* MWPhotoBrowserPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserPrivate.h; sourceTree = "<group>"; };
+		220801DC2018B08500ABC9F5 /* MWZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWZoomingScrollView.m; sourceTree = "<group>"; };
+		220801DD2018B08500ABC9F5 /* UIImage+MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MWPhotoBrowser.m"; sourceTree = "<group>"; };
+		220801DE2018B08500ABC9F5 /* MWGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWGridCell.h; sourceTree = "<group>"; };
+		220801DF2018B08500ABC9F5 /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingImageView.m; sourceTree = "<group>"; };
+		220801E02018B08500ABC9F5 /* MWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhoto.m; sourceTree = "<group>"; };
+		220801E12018B08500ABC9F5 /* MWTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingView.m; sourceTree = "<group>"; };
+		220801E22018B08500ABC9F5 /* MWCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCaptionView.h; sourceTree = "<group>"; };
+		220801E32018B08500ABC9F5 /* MWGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWGridViewController.m; sourceTree = "<group>"; };
+		220801E42018B08500ABC9F5 /* MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowser.h; sourceTree = "<group>"; };
+		220801E52018B08500ABC9F5 /* MWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCommon.h; sourceTree = "<group>"; };
+		220801E62018B08500ABC9F5 /* MWGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWGridCell.m; sourceTree = "<group>"; };
+		220801E72018B08500ABC9F5 /* UIImage+MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MWPhotoBrowser.h"; sourceTree = "<group>"; };
+		220801E82018B08500ABC9F5 /* MWZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWZoomingScrollView.h; sourceTree = "<group>"; };
+		220801EA2018B08500ABC9F5 /* UIBarButtonItemArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemArrowLeft.png; sourceTree = "<group>"; };
+		220801EB2018B08500ABC9F5 /* UIBarButtonItemGrid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemGrid@3x.png"; sourceTree = "<group>"; };
+		220801EC2018B08500ABC9F5 /* ImageSelectedSmallOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedSmallOn.png; sourceTree = "<group>"; };
+		220801ED2018B08500ABC9F5 /* UIBarButtonItemGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemGrid.png; sourceTree = "<group>"; };
+		220801EE2018B08500ABC9F5 /* UIBarButtonItemGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemGrid@2x.png"; sourceTree = "<group>"; };
+		220801EF2018B08500ABC9F5 /* VideoOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoOverlay@2x.png"; sourceTree = "<group>"; };
+		220801F02018B08500ABC9F5 /* ImageSelectedOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedOff.png; sourceTree = "<group>"; };
+		220801F12018B08500ABC9F5 /* PlayButtonOverlayLargeTap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLargeTap@2x.png"; sourceTree = "<group>"; };
+		220801F22018B08500ABC9F5 /* ImageError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@2x.png"; sourceTree = "<group>"; };
+		220801F32018B08500ABC9F5 /* ImageSelectedSmallOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOff@2x.png"; sourceTree = "<group>"; };
+		220801F42018B08500ABC9F5 /* ImageSelectedSmallOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOff@3x.png"; sourceTree = "<group>"; };
+		220801F52018B08500ABC9F5 /* PlayButtonOverlayLargeTap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonOverlayLargeTap.png; sourceTree = "<group>"; };
+		220801F62018B08500ABC9F5 /* ImageError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@3x.png"; sourceTree = "<group>"; };
+		220801F72018B08500ABC9F5 /* PlayButtonOverlayLargeTap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLargeTap@3x.png"; sourceTree = "<group>"; };
+		220801F82018B08500ABC9F5 /* UIBarButtonItemArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemArrowRight.png; sourceTree = "<group>"; };
+		220801F92018B08500ABC9F5 /* VideoOverlay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoOverlay@3x.png"; sourceTree = "<group>"; };
+		220801FA2018B08500ABC9F5 /* ImageError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageError.png; sourceTree = "<group>"; };
+		220801FB2018B08500ABC9F5 /* UIBarButtonItemArrowRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowRight@3x.png"; sourceTree = "<group>"; };
+		220801FC2018B08500ABC9F5 /* ImageSelectedOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedOn.png; sourceTree = "<group>"; };
+		220801FD2018B08500ABC9F5 /* PlayButtonOverlayLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLarge@2x.png"; sourceTree = "<group>"; };
+		220801FE2018B08500ABC9F5 /* ImageSelectedOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@2x.png"; sourceTree = "<group>"; };
+		220801FF2018B08500ABC9F5 /* UIBarButtonItemArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowLeft@2x.png"; sourceTree = "<group>"; };
+		220802002018B08500ABC9F5 /* VideoOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoOverlay.png; sourceTree = "<group>"; };
+		220802012018B08500ABC9F5 /* ImageSelectedSmallOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedSmallOff.png; sourceTree = "<group>"; };
+		220802022018B08500ABC9F5 /* UIBarButtonItemArrowLeft@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowLeft@3x.png"; sourceTree = "<group>"; };
+		220802032018B08500ABC9F5 /* ImageSelectedOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@3x.png"; sourceTree = "<group>"; };
+		220802042018B08500ABC9F5 /* PlayButtonOverlayLarge@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLarge@3x.png"; sourceTree = "<group>"; };
+		220802052018B08500ABC9F5 /* UIBarButtonItemArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowRight@2x.png"; sourceTree = "<group>"; };
+		220802062018B08500ABC9F5 /* ImageSelectedSmallOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOn@3x.png"; sourceTree = "<group>"; };
+		220802072018B08500ABC9F5 /* PlayButtonOverlayLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonOverlayLarge.png; sourceTree = "<group>"; };
+		220802082018B08500ABC9F5 /* ImageSelectedOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@3x.png"; sourceTree = "<group>"; };
+		220802092018B08500ABC9F5 /* ImageSelectedOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@2x.png"; sourceTree = "<group>"; };
+		2208020A2018B08500ABC9F5 /* ImageSelectedSmallOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOn@2x.png"; sourceTree = "<group>"; };
+		2208020C2018B08500ABC9F5 /* TMReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMReachability.m; sourceTree = "<group>"; };
+		2208020D2018B08500ABC9F5 /* TMReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMReachability.h; sourceTree = "<group>"; };
+		2208020F2018B08500ABC9F5 /* FTPopOverMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPopOverMenu.h; sourceTree = "<group>"; };
+		220802102018B08500ABC9F5 /* FTPopOverMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPopOverMenu.m; sourceTree = "<group>"; };
+		220802162018B08500ABC9F5 /* ZGMailMessageSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailMessageSearchViewController.h; sourceTree = "<group>"; };
+		220802172018B08500ABC9F5 /* ZGMailMessageSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailMessageSearchViewController.m; sourceTree = "<group>"; };
+		220802192018B08500ABC9F5 /* ZGRoundSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGRoundSearchBar.h; sourceTree = "<group>"; };
+		2208021A2018B08500ABC9F5 /* ZGRoundSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGRoundSearchBar.m; sourceTree = "<group>"; };
+		2208021F2018B08500ABC9F5 /* ZGMessageAttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMessageAttachmentViewController.h; sourceTree = "<group>"; };
+		220802202018B08500ABC9F5 /* ZGMessageAttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMessageAttachmentViewController.m; sourceTree = "<group>"; };
+		220802222018B08500ABC9F5 /* ZGAttachmentDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAttachmentDownloadView.h; sourceTree = "<group>"; };
+		220802232018B08500ABC9F5 /* ZGAttachmentDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAttachmentDownloadView.m; sourceTree = "<group>"; };
+		220802262018B08500ABC9F5 /* ZGMailMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailMessage.h; sourceTree = "<group>"; };
+		220802272018B08500ABC9F5 /* ZGMailRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailRecord.h; sourceTree = "<group>"; };
+		220802282018B08500ABC9F5 /* ZGMailRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailRecord.m; sourceTree = "<group>"; };
+		220802292018B08500ABC9F5 /* ZGMailMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailMessage.m; sourceTree = "<group>"; };
+		2208022B2018B08500ABC9F5 /* ZGMailModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailModule.m; sourceTree = "<group>"; };
+		2208022C2018B08500ABC9F5 /* ZGMailModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailModule.h; sourceTree = "<group>"; };
+		2208022E2018B08500ABC9F5 /* ZGMailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailListViewController.h; sourceTree = "<group>"; };
+		2208022F2018B08500ABC9F5 /* ZGSendingMailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSendingMailListViewController.m; sourceTree = "<group>"; };
+		220802302018B08500ABC9F5 /* ZGSendingMailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSendingMailListViewController.h; sourceTree = "<group>"; };
+		220802312018B08500ABC9F5 /* ZGMailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailListViewController.m; sourceTree = "<group>"; };
+		220802332018B08500ABC9F5 /* ZGMailListTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailListTitleView.m; sourceTree = "<group>"; };
+		220802342018B08500ABC9F5 /* ZGMailListCellPortraitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailListCellPortraitView.h; sourceTree = "<group>"; };
+		220802352018B08500ABC9F5 /* ZGMailListBottomToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailListBottomToolBar.h; sourceTree = "<group>"; };
+		220802362018B08500ABC9F5 /* ZGMailListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailListTableViewCell.h; sourceTree = "<group>"; };
+		220802372018B08500ABC9F5 /* ZGMailListTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailListTitleView.h; sourceTree = "<group>"; };
+		220802382018B08500ABC9F5 /* ZGMailListCellPortraitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailListCellPortraitView.m; sourceTree = "<group>"; };
+		220802392018B08500ABC9F5 /* ZGMailListBottomToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailListBottomToolBar.m; sourceTree = "<group>"; };
+		2208023A2018B08500ABC9F5 /* ZGMailListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailListTableViewCell.m; sourceTree = "<group>"; };
+		2208023D2018B08500ABC9F5 /* ZGMailAttachmetPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailAttachmetPhoto.m; sourceTree = "<group>"; };
+		2208023E2018B08500ABC9F5 /* ZGMailAttachmetPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailAttachmetPhoto.h; sourceTree = "<group>"; };
+		220802412018B08500ABC9F5 /* ZGNewMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGNewMailViewController.m; sourceTree = "<group>"; };
+		220802422018B08500ABC9F5 /* ZGNewMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGNewMailViewController.h; sourceTree = "<group>"; };
+		220802452018B08500ABC9F5 /* ZGAddAttachmentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAddAttachmentCollectionViewCell.m; sourceTree = "<group>"; };
+		220802462018B08500ABC9F5 /* ZGWriteMailFileAttachmentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGWriteMailFileAttachmentCollectionViewCell.m; sourceTree = "<group>"; };
+		220802472018B08500ABC9F5 /* ZGWriteMailAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGWriteMailAttachmentView.m; sourceTree = "<group>"; };
+		220802482018B08500ABC9F5 /* ZGWriteMailImageAttachmentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGWriteMailImageAttachmentCollectionViewCell.h; sourceTree = "<group>"; };
+		220802492018B08500ABC9F5 /* ZGAddAttachmentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAddAttachmentCollectionViewCell.h; sourceTree = "<group>"; };
+		2208024A2018B08500ABC9F5 /* ZGWriteMailAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGWriteMailAttachmentView.h; sourceTree = "<group>"; };
+		2208024B2018B08500ABC9F5 /* ZGWriteMailFileAttachmentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGWriteMailFileAttachmentCollectionViewCell.h; sourceTree = "<group>"; };
+		2208024C2018B08500ABC9F5 /* ZGWriteMailImageAttachmentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGWriteMailImageAttachmentCollectionViewCell.m; sourceTree = "<group>"; };
+		2208024D2018B08500ABC9F5 /* ZGSendMailTopIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSendMailTopIndicator.h; sourceTree = "<group>"; };
+		2208024F2018B08500ABC9F5 /* ZGMailAddressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailAddressButton.h; sourceTree = "<group>"; };
+		220802502018B08500ABC9F5 /* ZGMailAddressFlowEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailAddressFlowEditView.m; sourceTree = "<group>"; };
+		220802512018B08500ABC9F5 /* ZGComposeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGComposeHeaderView.h; sourceTree = "<group>"; };
+		220802522018B08500ABC9F5 /* ZGSenderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSenderButton.m; sourceTree = "<group>"; };
+		220802532018B08500ABC9F5 /* ZGSubjectEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSubjectEditView.h; sourceTree = "<group>"; };
+		220802542018B08500ABC9F5 /* ZGMailAddressTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailAddressTextField.m; sourceTree = "<group>"; };
+		220802552018B08500ABC9F5 /* ZGMailAddressFlowEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailAddressFlowEditView.h; sourceTree = "<group>"; };
+		220802562018B08500ABC9F5 /* ZGMailAddressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailAddressButton.m; sourceTree = "<group>"; };
+		220802572018B08500ABC9F5 /* ZGComposeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGComposeHeaderView.m; sourceTree = "<group>"; };
+		220802582018B08500ABC9F5 /* ZGMailAddressTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailAddressTextField.h; sourceTree = "<group>"; };
+		220802592018B08500ABC9F5 /* ZGSubjectEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSubjectEditView.m; sourceTree = "<group>"; };
+		2208025A2018B08500ABC9F5 /* ZGSenderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSenderButton.h; sourceTree = "<group>"; };
+		2208025B2018B08500ABC9F5 /* ZGSendMailTopIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSendMailTopIndicator.m; sourceTree = "<group>"; };
+		2208025F2018B08500ABC9F5 /* MCOCIDURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOCIDURLProtocol.h; sourceTree = "<group>"; };
+		220802602018B08500ABC9F5 /* MCOCIDURLProtocol.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOCIDURLProtocol.mm; sourceTree = "<group>"; };
+		220802622018B08500ABC9F5 /* ZGMailMessageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailMessageDetailViewController.h; sourceTree = "<group>"; };
+		220802632018B08500ABC9F5 /* ZGMailMessageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailMessageDetailViewController.m; sourceTree = "<group>"; };
+		220802652018B08500ABC9F5 /* ZGMessageAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMessageAttachmentView.h; sourceTree = "<group>"; };
+		220802662018B08500ABC9F5 /* ZGAttachmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAttachmentTableViewCell.h; sourceTree = "<group>"; };
+		220802672018B08500ABC9F5 /* ZGMessageHeaderDetailAddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMessageHeaderDetailAddressTableViewCell.h; sourceTree = "<group>"; };
+		220802682018B08500ABC9F5 /* ZGMessageHeaderDetailTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMessageHeaderDetailTimeTableViewCell.h; sourceTree = "<group>"; };
+		220802692018B08500ABC9F5 /* ZGAddressShadowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAddressShadowButton.m; sourceTree = "<group>"; };
+		2208026A2018B08500ABC9F5 /* ZGMailMessageHeaderDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailMessageHeaderDetailView.m; sourceTree = "<group>"; };
+		2208026B2018B08500ABC9F5 /* ZGMessageHeaderDetailAttachmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMessageHeaderDetailAttachmentTableViewCell.h; sourceTree = "<group>"; };
+		2208026C2018B08500ABC9F5 /* ZGMailMessageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailMessageHeaderView.m; sourceTree = "<group>"; };
+		2208026D2018B08500ABC9F5 /* MCOMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOMessageView.h; sourceTree = "<group>"; };
+		2208026E2018B08500ABC9F5 /* ZGMessageAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMessageAttachmentView.m; sourceTree = "<group>"; };
+		2208026F2018B08500ABC9F5 /* ZGMessageHeaderDetailTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMessageHeaderDetailTimeTableViewCell.m; sourceTree = "<group>"; };
+		220802702018B08500ABC9F5 /* ZGMessageHeaderDetailAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMessageHeaderDetailAddressTableViewCell.m; sourceTree = "<group>"; };
+		220802712018B08500ABC9F5 /* ZGAttachmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAttachmentTableViewCell.m; sourceTree = "<group>"; };
+		220802722018B08500ABC9F5 /* MCOMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOMessageView.mm; sourceTree = "<group>"; };
+		220802732018B08500ABC9F5 /* ZGMailMessageHeaderDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailMessageHeaderDetailView.h; sourceTree = "<group>"; };
+		220802742018B08500ABC9F5 /* ZGAddressShadowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAddressShadowButton.h; sourceTree = "<group>"; };
+		220802752018B08500ABC9F5 /* ZGMailMessageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailMessageHeaderView.h; sourceTree = "<group>"; };
+		220802762018B08500ABC9F5 /* ZGMessageHeaderDetailAttachmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMessageHeaderDetailAttachmentTableViewCell.m; sourceTree = "<group>"; };
+		2208027B2018B08500ABC9F5 /* ZGMailContactsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMailContactsDetailViewController.m; sourceTree = "<group>"; };
+		2208027C2018B08500ABC9F5 /* ZGMailContactsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMailContactsDetailViewController.h; sourceTree = "<group>"; };
+		2364839588C85E851567162E /* Pods-ZGMailboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGMailboxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGMailboxTests/Pods-ZGMailboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A9CD79A2E906956C469E140 /* Pods-ZGMailboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGMailboxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGMailboxUITests/Pods-ZGMailboxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		810B253D182EE90ABCFE28C7 /* libPods-ZGMailboxTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGMailboxTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B03AC12CF334CA837599D1 /* Pods-ZGMailboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGMailboxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGMailboxUITests/Pods-ZGMailboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		85540E872F8B2E0A9AB9884D /* Pods-ZGMailbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGMailbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGMailbox/Pods-ZGMailbox.debug.xcconfig"; sourceTree = "<group>"; };
+		C6593A8B07F75BBC0E41D69E /* libPods-ZGMailboxUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGMailboxUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD1079803EE7E19D6DDE001 /* Pods-ZGMailboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGMailboxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGMailboxTests/Pods-ZGMailboxTests.release.xcconfig"; sourceTree = "<group>"; };
+		F95C42653FECC5B3D68291B7 /* libPods-ZGMailbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGMailbox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220801752018A99600ABC9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C30144CCD4FAC9D53A47463 /* libPods-ZGMailbox.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2208018D2018A99600ABC9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F824DDF0398D526947DD51A /* libPods-ZGMailboxTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220801982018A99600ABC9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEE6B73C6350E3F1CF8C193 /* libPods-ZGMailboxUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2208016F2018A99600ABC9F5 = {
+			isa = PBXGroup;
+			children = (
+				2208017A2018A99600ABC9F5 /* ZGMailbox */,
+				220801932018A99600ABC9F5 /* ZGMailboxTests */,
+				2208019E2018A99600ABC9F5 /* ZGMailboxUITests */,
+				220801792018A99600ABC9F5 /* Products */,
+				743D4B97279F6232DD54A068 /* Pods */,
+				F7500AB30364DD1FBDE62E8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		220801792018A99600ABC9F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220801782018A99600ABC9F5 /* ZGMailbox.app */,
+				220801902018A99600ABC9F5 /* ZGMailboxTests.xctest */,
+				2208019B2018A99600ABC9F5 /* ZGMailboxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2208017A2018A99600ABC9F5 /* ZGMailbox */ = {
+			isa = PBXGroup;
+			children = (
+				2208017B2018A99600ABC9F5 /* AppDelegate.h */,
+				2208017C2018A99600ABC9F5 /* AppDelegate.m */,
+				220801AE2018B07D00ABC9F5 /* LoginViewController.h */,
+				220801AD2018B07D00ABC9F5 /* LoginViewController.m */,
+				220802112018B08500ABC9F5 /* Module */,
+				220801B02018B08500ABC9F5 /* Other */,
+				220801812018A99600ABC9F5 /* Main.storyboard */,
+				220801842018A99600ABC9F5 /* Assets.xcassets */,
+				220801862018A99600ABC9F5 /* LaunchScreen.storyboard */,
+				220801892018A99600ABC9F5 /* Info.plist */,
+				2208018A2018A99600ABC9F5 /* main.m */,
+			);
+			path = ZGMailbox;
+			sourceTree = "<group>";
+		};
+		220801932018A99600ABC9F5 /* ZGMailboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				220801942018A99600ABC9F5 /* ZGMailboxTests.m */,
+				220801962018A99600ABC9F5 /* Info.plist */,
+			);
+			path = ZGMailboxTests;
+			sourceTree = "<group>";
+		};
+		2208019E2018A99600ABC9F5 /* ZGMailboxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2208019F2018A99600ABC9F5 /* ZGMailboxUITests.m */,
+				220801A12018A99600ABC9F5 /* Info.plist */,
+			);
+			path = ZGMailboxUITests;
+			sourceTree = "<group>";
+		};
+		220801B02018B08500ABC9F5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				220801B12018B08500ABC9F5 /* Category */,
+				220801C32018B08500ABC9F5 /* Common */,
+				220801C92018B08500ABC9F5 /* Tool */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		220801B12018B08500ABC9F5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				220801B22018B08500ABC9F5 /* UIView */,
+				220801B52018B08500ABC9F5 /* Colors */,
+				220801B82018B08500ABC9F5 /* String */,
+				220801BD2018B08500ABC9F5 /* ViewController */,
+				220801C02018B08500ABC9F5 /* NSDate */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		220801B22018B08500ABC9F5 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				220801B42018B08500ABC9F5 /* UIView+Addition.h */,
+				220801B32018B08500ABC9F5 /* UIView+Addition.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		220801B52018B08500ABC9F5 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				220801B62018B08500ABC9F5 /* UIColor+colorWIthHex.h */,
+				220801B72018B08500ABC9F5 /* UIColor+colorWIthHex.m */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		220801B82018B08500ABC9F5 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				220801BC2018B08500ABC9F5 /* NSString+Mail.h */,
+				220801BA2018B08500ABC9F5 /* NSString+Mail.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		220801BD2018B08500ABC9F5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				220801BF2018B08500ABC9F5 /* UIViewController+HUD.h */,
+				220801BE2018B08500ABC9F5 /* UIViewController+HUD.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		220801C02018B08500ABC9F5 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				220801C22018B08500ABC9F5 /* NSDate+DDAddition.h */,
+				220801C12018B08500ABC9F5 /* NSDate+DDAddition.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		220801C32018B08500ABC9F5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				220801C52018B08500ABC9F5 /* Header.h */,
+				220801C72018B08500ABC9F5 /* Macros.h */,
+				220801C82018B08500ABC9F5 /* PrefixHeader.pch */,
+				220801C42018B08500ABC9F5 /* ZGConst.h */,
+				220801C62018B08500ABC9F5 /* ZGConst.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		220801C92018B08500ABC9F5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				220801CA2018B08500ABC9F5 /* HPGrowingTextView */,
+				220801CF2018B08500ABC9F5 /* RSA */,
+				220801D22018B08500ABC9F5 /* MWPhotoBrowser */,
+				2208020B2018B08500ABC9F5 /* Reachability */,
+				2208020E2018B08500ABC9F5 /* FTPopOverMenu */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		220801CA2018B08500ABC9F5 /* HPGrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				220801CE2018B08500ABC9F5 /* HPGrowingTextView.h */,
+				220801CC2018B08500ABC9F5 /* HPGrowingTextView.m */,
+				220801CB2018B08500ABC9F5 /* HPTextViewInternal.h */,
+				220801CD2018B08500ABC9F5 /* HPTextViewInternal.m */,
+			);
+			path = HPGrowingTextView;
+			sourceTree = "<group>";
+		};
+		220801CF2018B08500ABC9F5 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				220801D12018B08500ABC9F5 /* RSA.h */,
+				220801D02018B08500ABC9F5 /* RSA.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		220801D22018B08500ABC9F5 /* MWPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				220801D32018B08500ABC9F5 /* Classes */,
+				220801E92018B08500ABC9F5 /* Assets */,
+			);
+			path = MWPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		220801D32018B08500ABC9F5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				220801E22018B08500ABC9F5 /* MWCaptionView.h */,
+				220801D92018B08500ABC9F5 /* MWCaptionView.m */,
+				220801E52018B08500ABC9F5 /* MWCommon.h */,
+				220801DE2018B08500ABC9F5 /* MWGridCell.h */,
+				220801E62018B08500ABC9F5 /* MWGridCell.m */,
+				220801D72018B08500ABC9F5 /* MWGridViewController.h */,
+				220801E32018B08500ABC9F5 /* MWGridViewController.m */,
+				220801D52018B08500ABC9F5 /* MWPhoto.h */,
+				220801E02018B08500ABC9F5 /* MWPhoto.m */,
+				220801E42018B08500ABC9F5 /* MWPhotoBrowser.h */,
+				220801D82018B08500ABC9F5 /* MWPhotoBrowser.m */,
+				220801DB2018B08500ABC9F5 /* MWPhotoBrowserPrivate.h */,
+				220801D62018B08500ABC9F5 /* MWPhotoProtocol.h */,
+				220801D42018B08500ABC9F5 /* MWTapDetectingImageView.h */,
+				220801DF2018B08500ABC9F5 /* MWTapDetectingImageView.m */,
+				220801DA2018B08500ABC9F5 /* MWTapDetectingView.h */,
+				220801E12018B08500ABC9F5 /* MWTapDetectingView.m */,
+				220801E82018B08500ABC9F5 /* MWZoomingScrollView.h */,
+				220801DC2018B08500ABC9F5 /* MWZoomingScrollView.m */,
+				220801E72018B08500ABC9F5 /* UIImage+MWPhotoBrowser.h */,
+				220801DD2018B08500ABC9F5 /* UIImage+MWPhotoBrowser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		220801E92018B08500ABC9F5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				220801EA2018B08500ABC9F5 /* UIBarButtonItemArrowLeft.png */,
+				220801EB2018B08500ABC9F5 /* UIBarButtonItemGrid@3x.png */,
+				220801EC2018B08500ABC9F5 /* ImageSelectedSmallOn.png */,
+				220801ED2018B08500ABC9F5 /* UIBarButtonItemGrid.png */,
+				220801EE2018B08500ABC9F5 /* UIBarButtonItemGrid@2x.png */,
+				220801EF2018B08500ABC9F5 /* VideoOverlay@2x.png */,
+				220801F02018B08500ABC9F5 /* ImageSelectedOff.png */,
+				220801F12018B08500ABC9F5 /* PlayButtonOverlayLargeTap@2x.png */,
+				220801F22018B08500ABC9F5 /* ImageError@2x.png */,
+				220801F32018B08500ABC9F5 /* ImageSelectedSmallOff@2x.png */,
+				220801F42018B08500ABC9F5 /* ImageSelectedSmallOff@3x.png */,
+				220801F52018B08500ABC9F5 /* PlayButtonOverlayLargeTap.png */,
+				220801F62018B08500ABC9F5 /* ImageError@3x.png */,
+				220801F72018B08500ABC9F5 /* PlayButtonOverlayLargeTap@3x.png */,
+				220801F82018B08500ABC9F5 /* UIBarButtonItemArrowRight.png */,
+				220801F92018B08500ABC9F5 /* VideoOverlay@3x.png */,
+				220801FA2018B08500ABC9F5 /* ImageError.png */,
+				220801FB2018B08500ABC9F5 /* UIBarButtonItemArrowRight@3x.png */,
+				220801FC2018B08500ABC9F5 /* ImageSelectedOn.png */,
+				220801FD2018B08500ABC9F5 /* PlayButtonOverlayLarge@2x.png */,
+				220801FE2018B08500ABC9F5 /* ImageSelectedOff@2x.png */,
+				220801FF2018B08500ABC9F5 /* UIBarButtonItemArrowLeft@2x.png */,
+				220802002018B08500ABC9F5 /* VideoOverlay.png */,
+				220802012018B08500ABC9F5 /* ImageSelectedSmallOff.png */,
+				220802022018B08500ABC9F5 /* UIBarButtonItemArrowLeft@3x.png */,
+				220802032018B08500ABC9F5 /* ImageSelectedOff@3x.png */,
+				220802042018B08500ABC9F5 /* PlayButtonOverlayLarge@3x.png */,
+				220802052018B08500ABC9F5 /* UIBarButtonItemArrowRight@2x.png */,
+				220802062018B08500ABC9F5 /* ImageSelectedSmallOn@3x.png */,
+				220802072018B08500ABC9F5 /* PlayButtonOverlayLarge.png */,
+				220802082018B08500ABC9F5 /* ImageSelectedOn@3x.png */,
+				220802092018B08500ABC9F5 /* ImageSelectedOn@2x.png */,
+				2208020A2018B08500ABC9F5 /* ImageSelectedSmallOn@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2208020B2018B08500ABC9F5 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2208020D2018B08500ABC9F5 /* TMReachability.h */,
+				2208020C2018B08500ABC9F5 /* TMReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		2208020E2018B08500ABC9F5 /* FTPopOverMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2208020F2018B08500ABC9F5 /* FTPopOverMenu.h */,
+				220802102018B08500ABC9F5 /* FTPopOverMenu.m */,
+			);
+			path = FTPopOverMenu;
+			sourceTree = "<group>";
+		};
+		220802112018B08500ABC9F5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				220802242018B08500ABC9F5 /* MailList-邮件列表 */,
+				2208025C2018B08500ABC9F5 /* MailDetail-邮件详情 */,
+				2208021B2018B08500ABC9F5 /* MailAttachment-邮件附件 */,
+				220802772018B08500ABC9F5 /* MailContactsDetail-邮件联系人详细 */,
+				220802122018B08500ABC9F5 /* MailSearch-邮件搜索 */,
+				2208023B2018B08500ABC9F5 /* NewMail-新邮件 */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		220802122018B08500ABC9F5 /* MailSearch-邮件搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				220802152018B08500ABC9F5 /* Controllers */,
+				220802142018B08500ABC9F5 /* Manager */,
+				220802132018B08500ABC9F5 /* Models */,
+				220802182018B08500ABC9F5 /* Views */,
+			);
+			path = "MailSearch-邮件搜索";
+			sourceTree = "<group>";
+		};
+		220802132018B08500ABC9F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		220802142018B08500ABC9F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		220802152018B08500ABC9F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				220802162018B08500ABC9F5 /* ZGMailMessageSearchViewController.h */,
+				220802172018B08500ABC9F5 /* ZGMailMessageSearchViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		220802182018B08500ABC9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				220802192018B08500ABC9F5 /* ZGRoundSearchBar.h */,
+				2208021A2018B08500ABC9F5 /* ZGRoundSearchBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2208021B2018B08500ABC9F5 /* MailAttachment-邮件附件 */ = {
+			isa = PBXGroup;
+			children = (
+				2208021E2018B08500ABC9F5 /* Controllers */,
+				2208021D2018B08500ABC9F5 /* Manager */,
+				2208021C2018B08500ABC9F5 /* Models */,
+				220802212018B08500ABC9F5 /* Views */,
+			);
+			path = "MailAttachment-邮件附件";
+			sourceTree = "<group>";
+		};
+		2208021C2018B08500ABC9F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2208021D2018B08500ABC9F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2208021E2018B08500ABC9F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2208021F2018B08500ABC9F5 /* ZGMessageAttachmentViewController.h */,
+				220802202018B08500ABC9F5 /* ZGMessageAttachmentViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		220802212018B08500ABC9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				220802222018B08500ABC9F5 /* ZGAttachmentDownloadView.h */,
+				220802232018B08500ABC9F5 /* ZGAttachmentDownloadView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		220802242018B08500ABC9F5 /* MailList-邮件列表 */ = {
+			isa = PBXGroup;
+			children = (
+				2208022D2018B08500ABC9F5 /* Controllers */,
+				220802252018B08500ABC9F5 /* Models */,
+				2208022A2018B08500ABC9F5 /* Manager */,
+				220802322018B08500ABC9F5 /* Views */,
+			);
+			path = "MailList-邮件列表";
+			sourceTree = "<group>";
+		};
+		220802252018B08500ABC9F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				220802262018B08500ABC9F5 /* ZGMailMessage.h */,
+				220802292018B08500ABC9F5 /* ZGMailMessage.m */,
+				220802272018B08500ABC9F5 /* ZGMailRecord.h */,
+				220802282018B08500ABC9F5 /* ZGMailRecord.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2208022A2018B08500ABC9F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2208022C2018B08500ABC9F5 /* ZGMailModule.h */,
+				2208022B2018B08500ABC9F5 /* ZGMailModule.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2208022D2018B08500ABC9F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2208022E2018B08500ABC9F5 /* ZGMailListViewController.h */,
+				220802312018B08500ABC9F5 /* ZGMailListViewController.m */,
+				220802302018B08500ABC9F5 /* ZGSendingMailListViewController.h */,
+				2208022F2018B08500ABC9F5 /* ZGSendingMailListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		220802322018B08500ABC9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				220802352018B08500ABC9F5 /* ZGMailListBottomToolBar.h */,
+				220802392018B08500ABC9F5 /* ZGMailListBottomToolBar.m */,
+				220802342018B08500ABC9F5 /* ZGMailListCellPortraitView.h */,
+				220802382018B08500ABC9F5 /* ZGMailListCellPortraitView.m */,
+				220802362018B08500ABC9F5 /* ZGMailListTableViewCell.h */,
+				2208023A2018B08500ABC9F5 /* ZGMailListTableViewCell.m */,
+				220802372018B08500ABC9F5 /* ZGMailListTitleView.h */,
+				220802332018B08500ABC9F5 /* ZGMailListTitleView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2208023B2018B08500ABC9F5 /* NewMail-新邮件 */ = {
+			isa = PBXGroup;
+			children = (
+				220802402018B08500ABC9F5 /* Controllers */,
+				2208023F2018B08500ABC9F5 /* Manager */,
+				2208023C2018B08500ABC9F5 /* Models */,
+				220802432018B08500ABC9F5 /* Views */,
+			);
+			path = "NewMail-新邮件";
+			sourceTree = "<group>";
+		};
+		2208023C2018B08500ABC9F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2208023E2018B08500ABC9F5 /* ZGMailAttachmetPhoto.h */,
+				2208023D2018B08500ABC9F5 /* ZGMailAttachmetPhoto.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2208023F2018B08500ABC9F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		220802402018B08500ABC9F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				220802422018B08500ABC9F5 /* ZGNewMailViewController.h */,
+				220802412018B08500ABC9F5 /* ZGNewMailViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		220802432018B08500ABC9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				220802442018B08500ABC9F5 /* AttachmentView */,
+				2208024E2018B08500ABC9F5 /* HeaderView */,
+				2208024D2018B08500ABC9F5 /* ZGSendMailTopIndicator.h */,
+				2208025B2018B08500ABC9F5 /* ZGSendMailTopIndicator.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		220802442018B08500ABC9F5 /* AttachmentView */ = {
+			isa = PBXGroup;
+			children = (
+				220802492018B08500ABC9F5 /* ZGAddAttachmentCollectionViewCell.h */,
+				220802452018B08500ABC9F5 /* ZGAddAttachmentCollectionViewCell.m */,
+				2208024A2018B08500ABC9F5 /* ZGWriteMailAttachmentView.h */,
+				220802472018B08500ABC9F5 /* ZGWriteMailAttachmentView.m */,
+				2208024B2018B08500ABC9F5 /* ZGWriteMailFileAttachmentCollectionViewCell.h */,
+				220802462018B08500ABC9F5 /* ZGWriteMailFileAttachmentCollectionViewCell.m */,
+				220802482018B08500ABC9F5 /* ZGWriteMailImageAttachmentCollectionViewCell.h */,
+				2208024C2018B08500ABC9F5 /* ZGWriteMailImageAttachmentCollectionViewCell.m */,
+			);
+			path = AttachmentView;
+			sourceTree = "<group>";
+		};
+		2208024E2018B08500ABC9F5 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				220802512018B08500ABC9F5 /* ZGComposeHeaderView.h */,
+				220802572018B08500ABC9F5 /* ZGComposeHeaderView.m */,
+				2208024F2018B08500ABC9F5 /* ZGMailAddressButton.h */,
+				220802562018B08500ABC9F5 /* ZGMailAddressButton.m */,
+				220802552018B08500ABC9F5 /* ZGMailAddressFlowEditView.h */,
+				220802502018B08500ABC9F5 /* ZGMailAddressFlowEditView.m */,
+				220802582018B08500ABC9F5 /* ZGMailAddressTextField.h */,
+				220802542018B08500ABC9F5 /* ZGMailAddressTextField.m */,
+				2208025A2018B08500ABC9F5 /* ZGSenderButton.h */,
+				220802522018B08500ABC9F5 /* ZGSenderButton.m */,
+				220802532018B08500ABC9F5 /* ZGSubjectEditView.h */,
+				220802592018B08500ABC9F5 /* ZGSubjectEditView.m */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		2208025C2018B08500ABC9F5 /* MailDetail-邮件详情 */ = {
+			isa = PBXGroup;
+			children = (
+				220802612018B08500ABC9F5 /* Controllers */,
+				2208025E2018B08500ABC9F5 /* Manager */,
+				2208025D2018B08500ABC9F5 /* Models */,
+				220802642018B08500ABC9F5 /* Views */,
+			);
+			path = "MailDetail-邮件详情";
+			sourceTree = "<group>";
+		};
+		2208025D2018B08500ABC9F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2208025E2018B08500ABC9F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2208025F2018B08500ABC9F5 /* MCOCIDURLProtocol.h */,
+				220802602018B08500ABC9F5 /* MCOCIDURLProtocol.mm */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		220802612018B08500ABC9F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				220802622018B08500ABC9F5 /* ZGMailMessageDetailViewController.h */,
+				220802632018B08500ABC9F5 /* ZGMailMessageDetailViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		220802642018B08500ABC9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2208026D2018B08500ABC9F5 /* MCOMessageView.h */,
+				220802722018B08500ABC9F5 /* MCOMessageView.mm */,
+				220802742018B08500ABC9F5 /* ZGAddressShadowButton.h */,
+				220802692018B08500ABC9F5 /* ZGAddressShadowButton.m */,
+				220802662018B08500ABC9F5 /* ZGAttachmentTableViewCell.h */,
+				220802712018B08500ABC9F5 /* ZGAttachmentTableViewCell.m */,
+				220802732018B08500ABC9F5 /* ZGMailMessageHeaderDetailView.h */,
+				2208026A2018B08500ABC9F5 /* ZGMailMessageHeaderDetailView.m */,
+				220802752018B08500ABC9F5 /* ZGMailMessageHeaderView.h */,
+				2208026C2018B08500ABC9F5 /* ZGMailMessageHeaderView.m */,
+				220802652018B08500ABC9F5 /* ZGMessageAttachmentView.h */,
+				2208026E2018B08500ABC9F5 /* ZGMessageAttachmentView.m */,
+				220802672018B08500ABC9F5 /* ZGMessageHeaderDetailAddressTableViewCell.h */,
+				220802702018B08500ABC9F5 /* ZGMessageHeaderDetailAddressTableViewCell.m */,
+				2208026B2018B08500ABC9F5 /* ZGMessageHeaderDetailAttachmentTableViewCell.h */,
+				220802762018B08500ABC9F5 /* ZGMessageHeaderDetailAttachmentTableViewCell.m */,
+				220802682018B08500ABC9F5 /* ZGMessageHeaderDetailTimeTableViewCell.h */,
+				2208026F2018B08500ABC9F5 /* ZGMessageHeaderDetailTimeTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		220802772018B08500ABC9F5 /* MailContactsDetail-邮件联系人详细 */ = {
+			isa = PBXGroup;
+			children = (
+				2208027A2018B08500ABC9F5 /* Controllers */,
+				220802792018B08500ABC9F5 /* Manager */,
+				220802782018B08500ABC9F5 /* Models */,
+				2208027D2018B08500ABC9F5 /* Views */,
+			);
+			path = "MailContactsDetail-邮件联系人详细";
+			sourceTree = "<group>";
+		};
+		220802782018B08500ABC9F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		220802792018B08500ABC9F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2208027A2018B08500ABC9F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2208027C2018B08500ABC9F5 /* ZGMailContactsDetailViewController.h */,
+				2208027B2018B08500ABC9F5 /* ZGMailContactsDetailViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2208027D2018B08500ABC9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		743D4B97279F6232DD54A068 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85540E872F8B2E0A9AB9884D /* Pods-ZGMailbox.debug.xcconfig */,
+				081313902924B0597966A364 /* Pods-ZGMailbox.release.xcconfig */,
+				2364839588C85E851567162E /* Pods-ZGMailboxTests.debug.xcconfig */,
+				EAD1079803EE7E19D6DDE001 /* Pods-ZGMailboxTests.release.xcconfig */,
+				83B03AC12CF334CA837599D1 /* Pods-ZGMailboxUITests.debug.xcconfig */,
+				2A9CD79A2E906956C469E140 /* Pods-ZGMailboxUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7500AB30364DD1FBDE62E8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95C42653FECC5B3D68291B7 /* libPods-ZGMailbox.a */,
+				810B253D182EE90ABCFE28C7 /* libPods-ZGMailboxTests.a */,
+				C6593A8B07F75BBC0E41D69E /* libPods-ZGMailboxUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220801772018A99600ABC9F5 /* ZGMailbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220801A42018A99600ABC9F5 /* Build configuration list for PBXNativeTarget "ZGMailbox" */;
+			buildPhases = (
+				CDBC9672C7EDCB38E41C7445 /* [CP] Check Pods Manifest.lock */,
+				220801742018A99600ABC9F5 /* Sources */,
+				220801752018A99600ABC9F5 /* Frameworks */,
+				220801762018A99600ABC9F5 /* Resources */,
+				6D5FDF91E3D5B8700671E1CE /* [CP] Embed Pods Frameworks */,
+				A4DACA566871F833C13A76DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZGMailbox;
+			productName = ZGMailbox;
+			productReference = 220801782018A99600ABC9F5 /* ZGMailbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2208018F2018A99600ABC9F5 /* ZGMailboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220801A72018A99600ABC9F5 /* Build configuration list for PBXNativeTarget "ZGMailboxTests" */;
+			buildPhases = (
+				40B547D4035724A3394F6DA4 /* [CP] Check Pods Manifest.lock */,
+				2208018C2018A99600ABC9F5 /* Sources */,
+				2208018D2018A99600ABC9F5 /* Frameworks */,
+				2208018E2018A99600ABC9F5 /* Resources */,
+				D8579966A2405CE8FB825B1E /* [CP] Embed Pods Frameworks */,
+				A7B603E7FCB83F54BF134FC6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220801922018A99600ABC9F5 /* PBXTargetDependency */,
+			);
+			name = ZGMailboxTests;
+			productName = ZGMailboxTests;
+			productReference = 220801902018A99600ABC9F5 /* ZGMailboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2208019A2018A99600ABC9F5 /* ZGMailboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220801AA2018A99600ABC9F5 /* Build configuration list for PBXNativeTarget "ZGMailboxUITests" */;
+			buildPhases = (
+				8B21149152321DE0C0B291AB /* [CP] Check Pods Manifest.lock */,
+				220801972018A99600ABC9F5 /* Sources */,
+				220801982018A99600ABC9F5 /* Frameworks */,
+				220801992018A99600ABC9F5 /* Resources */,
+				DC724782621AE7ECE9175E4B /* [CP] Embed Pods Frameworks */,
+				9DA76F9920E80BD579E2B16A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2208019D2018A99600ABC9F5 /* PBXTargetDependency */,
+			);
+			name = ZGMailboxUITests;
+			productName = ZGMailboxUITests;
+			productReference = 2208019B2018A99600ABC9F5 /* ZGMailboxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220801702018A99600ABC9F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZG;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zzg;
+				TargetAttributes = {
+					220801772018A99600ABC9F5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2208018F2018A99600ABC9F5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 220801772018A99600ABC9F5;
+					};
+					2208019A2018A99600ABC9F5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 220801772018A99600ABC9F5;
+					};
+				};
+			};
+			buildConfigurationList = 220801732018A99600ABC9F5 /* Build configuration list for PBXProject "ZGMailbox" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2208016F2018A99600ABC9F5;
+			productRefGroup = 220801792018A99600ABC9F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220801772018A99600ABC9F5 /* ZGMailbox */,
+				2208018F2018A99600ABC9F5 /* ZGMailboxTests */,
+				2208019A2018A99600ABC9F5 /* ZGMailboxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220801762018A99600ABC9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220802942018B08500ABC9F5 /* UIBarButtonItemGrid.png in Resources */,
+				220801882018A99600ABC9F5 /* LaunchScreen.storyboard in Resources */,
+				220802B12018B08500ABC9F5 /* ImageSelectedSmallOn@2x.png in Resources */,
+				220802A12018B08500ABC9F5 /* ImageError.png in Resources */,
+				220802A52018B08500ABC9F5 /* ImageSelectedOff@2x.png in Resources */,
+				220802962018B08500ABC9F5 /* VideoOverlay@2x.png in Resources */,
+				220802AF2018B08500ABC9F5 /* ImageSelectedOn@3x.png in Resources */,
+				2208029A2018B08500ABC9F5 /* ImageSelectedSmallOff@2x.png in Resources */,
+				2208029C2018B08500ABC9F5 /* PlayButtonOverlayLargeTap.png in Resources */,
+				220802AE2018B08500ABC9F5 /* PlayButtonOverlayLarge.png in Resources */,
+				220802AC2018B08500ABC9F5 /* UIBarButtonItemArrowRight@2x.png in Resources */,
+				220802992018B08500ABC9F5 /* ImageError@2x.png in Resources */,
+				220802982018B08500ABC9F5 /* PlayButtonOverlayLargeTap@2x.png in Resources */,
+				220802A92018B08500ABC9F5 /* UIBarButtonItemArrowLeft@3x.png in Resources */,
+				220802922018B08500ABC9F5 /* UIBarButtonItemGrid@3x.png in Resources */,
+				220802A02018B08500ABC9F5 /* VideoOverlay@3x.png in Resources */,
+				220802A42018B08500ABC9F5 /* PlayButtonOverlayLarge@2x.png in Resources */,
+				220802A62018B08500ABC9F5 /* UIBarButtonItemArrowLeft@2x.png in Resources */,
+				220802952018B08500ABC9F5 /* UIBarButtonItemGrid@2x.png in Resources */,
+				220801852018A99600ABC9F5 /* Assets.xcassets in Resources */,
+				220801832018A99600ABC9F5 /* Main.storyboard in Resources */,
+				2208029F2018B08500ABC9F5 /* UIBarButtonItemArrowRight.png in Resources */,
+				220802912018B08500ABC9F5 /* UIBarButtonItemArrowLeft.png in Resources */,
+				2208029E2018B08500ABC9F5 /* PlayButtonOverlayLargeTap@3x.png in Resources */,
+				220802AB2018B08500ABC9F5 /* PlayButtonOverlayLarge@3x.png in Resources */,
+				2208029D2018B08500ABC9F5 /* ImageError@3x.png in Resources */,
+				220802972018B08500ABC9F5 /* ImageSelectedOff.png in Resources */,
+				220802A82018B08500ABC9F5 /* ImageSelectedSmallOff.png in Resources */,
+				2208029B2018B08500ABC9F5 /* ImageSelectedSmallOff@3x.png in Resources */,
+				220802AA2018B08500ABC9F5 /* ImageSelectedOff@3x.png in Resources */,
+				220802AD2018B08500ABC9F5 /* ImageSelectedSmallOn@3x.png in Resources */,
+				220802A32018B08500ABC9F5 /* ImageSelectedOn.png in Resources */,
+				220802B02018B08500ABC9F5 /* ImageSelectedOn@2x.png in Resources */,
+				220802A22018B08500ABC9F5 /* UIBarButtonItemArrowRight@3x.png in Resources */,
+				220802A72018B08500ABC9F5 /* VideoOverlay.png in Resources */,
+				220802932018B08500ABC9F5 /* ImageSelectedSmallOn.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2208018E2018A99600ABC9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220801992018A99600ABC9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40B547D4035724A3394F6DA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGMailboxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D5FDF91E3D5B8700671E1CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGMailbox/Pods-ZGMailbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B21149152321DE0C0B291AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGMailboxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA76F9920E80BD579E2B16A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGMailboxUITests/Pods-ZGMailboxUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DACA566871F833C13A76DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZGMailbox/Pods-ZGMailbox-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGMailbox/Pods-ZGMailbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7B603E7FCB83F54BF134FC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGMailboxTests/Pods-ZGMailboxTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDBC9672C7EDCB38E41C7445 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGMailbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8579966A2405CE8FB825B1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGMailboxTests/Pods-ZGMailboxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC724782621AE7ECE9175E4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGMailboxUITests/Pods-ZGMailboxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220801742018A99600ABC9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220802B82018B08500ABC9F5 /* ZGMailRecord.m in Sources */,
+				220802862018B08500ABC9F5 /* HPTextViewInternal.m in Sources */,
+				2208028F2018B08500ABC9F5 /* MWGridViewController.m in Sources */,
+				2208028A2018B08500ABC9F5 /* MWZoomingScrollView.m in Sources */,
+				220802D12018B08500ABC9F5 /* ZGMailMessageHeaderDetailView.m in Sources */,
+				220802C62018B08500ABC9F5 /* ZGWriteMailImageAttachmentCollectionViewCell.m in Sources */,
+				220802BE2018B08500ABC9F5 /* ZGMailListCellPortraitView.m in Sources */,
+				220802B52018B08500ABC9F5 /* ZGRoundSearchBar.m in Sources */,
+				2208027F2018B08500ABC9F5 /* UIColor+colorWIthHex.m in Sources */,
+				220802BC2018B08500ABC9F5 /* ZGMailListViewController.m in Sources */,
+				220802832018B08500ABC9F5 /* NSDate+DDAddition.m in Sources */,
+				220802D72018B08500ABC9F5 /* MCOMessageView.mm in Sources */,
+				220802CC2018B08500ABC9F5 /* ZGSubjectEditView.m in Sources */,
+				220802D92018B08500ABC9F5 /* ZGMailContactsDetailViewController.m in Sources */,
+				220802D42018B08500ABC9F5 /* ZGMessageHeaderDetailTimeTableViewCell.m in Sources */,
+				220802BD2018B08500ABC9F5 /* ZGMailListTitleView.m in Sources */,
+				220802D22018B08500ABC9F5 /* ZGMailMessageHeaderView.m in Sources */,
+				220802822018B08500ABC9F5 /* UIViewController+HUD.m in Sources */,
+				220802C82018B08500ABC9F5 /* ZGSenderButton.m in Sources */,
+				220802BB2018B08500ABC9F5 /* ZGSendingMailListViewController.m in Sources */,
+				220802C02018B08500ABC9F5 /* ZGMailListTableViewCell.m in Sources */,
+				2208028E2018B08500ABC9F5 /* MWTapDetectingView.m in Sources */,
+				220802852018B08500ABC9F5 /* HPGrowingTextView.m in Sources */,
+				2208027E2018B08500ABC9F5 /* UIView+Addition.m in Sources */,
+				220801AF2018B07D00ABC9F5 /* LoginViewController.m in Sources */,
+				2208028D2018B08500ABC9F5 /* MWPhoto.m in Sources */,
+				220802872018B08500ABC9F5 /* RSA.m in Sources */,
+				220802C22018B08500ABC9F5 /* ZGNewMailViewController.m in Sources */,
+				220802892018B08500ABC9F5 /* MWCaptionView.m in Sources */,
+				220802CF2018B08500ABC9F5 /* ZGMailMessageDetailViewController.m in Sources */,
+				220802BF2018B08500ABC9F5 /* ZGMailListBottomToolBar.m in Sources */,
+				2208018B2018A99600ABC9F5 /* main.m in Sources */,
+				2208028C2018B08500ABC9F5 /* MWTapDetectingImageView.m in Sources */,
+				220802CB2018B08500ABC9F5 /* ZGComposeHeaderView.m in Sources */,
+				220802C42018B08500ABC9F5 /* ZGWriteMailFileAttachmentCollectionViewCell.m in Sources */,
+				220802CE2018B08500ABC9F5 /* MCOCIDURLProtocol.mm in Sources */,
+				220802812018B08500ABC9F5 /* NSString+Mail.m in Sources */,
+				220802C52018B08500ABC9F5 /* ZGWriteMailAttachmentView.m in Sources */,
+				220802BA2018B08500ABC9F5 /* ZGMailModule.m in Sources */,
+				220802C12018B08500ABC9F5 /* ZGMailAttachmetPhoto.m in Sources */,
+				220802D52018B08500ABC9F5 /* ZGMessageHeaderDetailAddressTableViewCell.m in Sources */,
+				220802D02018B08500ABC9F5 /* ZGAddressShadowButton.m in Sources */,
+				220802B72018B08500ABC9F5 /* ZGAttachmentDownloadView.m in Sources */,
+				220802B62018B08500ABC9F5 /* ZGMessageAttachmentViewController.m in Sources */,
+				220802C72018B08500ABC9F5 /* ZGMailAddressFlowEditView.m in Sources */,
+				220802CD2018B08500ABC9F5 /* ZGSendMailTopIndicator.m in Sources */,
+				220802B92018B08500ABC9F5 /* ZGMailMessage.m in Sources */,
+				220802D82018B08500ABC9F5 /* ZGMessageHeaderDetailAttachmentTableViewCell.m in Sources */,
+				220802CA2018B08500ABC9F5 /* ZGMailAddressButton.m in Sources */,
+				220802D62018B08500ABC9F5 /* ZGAttachmentTableViewCell.m in Sources */,
+				220802B22018B08500ABC9F5 /* TMReachability.m in Sources */,
+				220802C32018B08500ABC9F5 /* ZGAddAttachmentCollectionViewCell.m in Sources */,
+				220802B42018B08500ABC9F5 /* ZGMailMessageSearchViewController.m in Sources */,
+				220802842018B08500ABC9F5 /* ZGConst.m in Sources */,
+				2208017D2018A99600ABC9F5 /* AppDelegate.m in Sources */,
+				220802B32018B08500ABC9F5 /* FTPopOverMenu.m in Sources */,
+				220802882018B08500ABC9F5 /* MWPhotoBrowser.m in Sources */,
+				2208028B2018B08500ABC9F5 /* UIImage+MWPhotoBrowser.m in Sources */,
+				220802C92018B08500ABC9F5 /* ZGMailAddressTextField.m in Sources */,
+				220802D32018B08500ABC9F5 /* ZGMessageAttachmentView.m in Sources */,
+				220802902018B08500ABC9F5 /* MWGridCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2208018C2018A99600ABC9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220801952018A99600ABC9F5 /* ZGMailboxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220801972018A99600ABC9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220801A02018A99600ABC9F5 /* ZGMailboxUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220801922018A99600ABC9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220801772018A99600ABC9F5 /* ZGMailbox */;
+			targetProxy = 220801912018A99600ABC9F5 /* PBXContainerItemProxy */;
+		};
+		2208019D2018A99600ABC9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220801772018A99600ABC9F5 /* ZGMailbox */;
+			targetProxy = 2208019C2018A99600ABC9F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		220801812018A99600ABC9F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220801822018A99600ABC9F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		220801862018A99600ABC9F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220801872018A99600ABC9F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		220801A22018A99600ABC9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		220801A32018A99600ABC9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		220801A52018A99600ABC9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85540E872F8B2E0A9AB9884D /* Pods-ZGMailbox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEQB6EZ8G4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGMailBox/Other/Common/PrefixHeader.pch";
+				INFOPLIST_FILE = ZGMailbox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzg.ZGMailbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		220801A62018A99600ABC9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081313902924B0597966A364 /* Pods-ZGMailbox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEQB6EZ8G4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGMailBox/Other/Common/PrefixHeader.pch";
+				INFOPLIST_FILE = ZGMailbox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzg.ZGMailbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		220801A82018A99600ABC9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2364839588C85E851567162E /* Pods-ZGMailboxTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGMailboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzg.ZGMailboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZGMailbox.app/ZGMailbox";
+			};
+			name = Debug;
+		};
+		220801A92018A99600ABC9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD1079803EE7E19D6DDE001 /* Pods-ZGMailboxTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGMailboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzg.ZGMailboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZGMailbox.app/ZGMailbox";
+			};
+			name = Release;
+		};
+		220801AB2018A99600ABC9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B03AC12CF334CA837599D1 /* Pods-ZGMailboxUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGMailboxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzg.ZGMailboxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZGMailbox;
+			};
+			name = Debug;
+		};
+		220801AC2018A99600ABC9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9CD79A2E906956C469E140 /* Pods-ZGMailboxUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZGMailboxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzg.ZGMailboxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZGMailbox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220801732018A99600ABC9F5 /* Build configuration list for PBXProject "ZGMailbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220801A22018A99600ABC9F5 /* Debug */,
+				220801A32018A99600ABC9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220801A42018A99600ABC9F5 /* Build configuration list for PBXNativeTarget "ZGMailbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220801A52018A99600ABC9F5 /* Debug */,
+				220801A62018A99600ABC9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220801A72018A99600ABC9F5 /* Build configuration list for PBXNativeTarget "ZGMailboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220801A82018A99600ABC9F5 /* Debug */,
+				220801A92018A99600ABC9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220801AA2018A99600ABC9F5 /* Build configuration list for PBXNativeTarget "ZGMailboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220801AB2018A99600ABC9F5 /* Debug */,
+				220801AC2018A99600ABC9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 220801702018A99600ABC9F5 /* Project object */;
+}
