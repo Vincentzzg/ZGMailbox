@@ -1,5 +1,5 @@
 # ZGMailbox
-基于[MailCore2](https://github.com/MailCore/mailcore2)库写的邮件客户端（持续优化中）
+基于[MailCore 2](https://github.com/MailCore/mailcore2)库写的邮件客户端（持续优化中）
 
 目前实现了：
 * 邮件列表
