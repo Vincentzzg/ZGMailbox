@@ -1,5 +1,5 @@
 # ZGMailbox
-基于[MailCore 2](https://github.com/MailCore/mailcore2)库实现的支持IMAP和SMTP协议的邮件客户端，持续优化中。
+基于[MailCore 2](https://github.com/MailCore/mailcore2)库实现的支持IMAP和SMTP协议的邮件客户端。
 
 目前实现了：
 * 邮件列表
