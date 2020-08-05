@@ -563,7 +563,7 @@ static NSString *const MailSortKey = @"header.receivedDate";
  *
  *  @param folder   目录
  *  @param messages 消息数组
- *  @param kind
+ *  @param kind 标记类型
  *  @param flags    标志
  */
 - (void)storeFlagsWithFolder:(NSString *)folder messages:(NSArray *)messages kind:(MCOIMAPStoreFlagsRequestKind)kind flags:(MCOMessageFlag)flags {
@@ -951,7 +951,6 @@ static NSString *const MailSortKey = @"header.receivedDate";
 }
 
 
-
 ////////////////////////////////////////////////*******草稿箱和发件箱本地数据操作******////////////////////////////////////////////////
 
 #pragma mark - 草稿箱和发件箱本地数据操作
@@ -1137,96 +1136,6 @@ static NSString *const MailSortKey = @"header.receivedDate";
     
     return imageName;
 }
-
-//#pragma mark - CTAPIManagerCallBackDelegate
-//
-//- (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager {
-//    NSDictionary *dic = [manager fetchDataWithReformer:nil];
-//    if (manager == self.configApiManager) {
-//        NSDictionary *data = [dic objectForKey:@"mail"];
-//        if (data) {
-//            NSString *imapAddress = [data objectForKey:@"imapAddress"];
-//            NSNumber *imapPort = [data objectForKey:@"imapPort"];
-//            NSString *smtpAddress = [data objectForKey:@"smtpAddress"];
-//            NSNumber *smtpPort = [data objectForKey:@"smtpPort"];
-//            
-//            [[NSUserDefaults standardUserDefaults] setObject:imapAddress forKey:IMAPAddress_KEY];
-//            [[NSUserDefaults standardUserDefaults] setObject:imapPort forKey:IMAPPort_KEY];
-//            [[NSUserDefaults standardUserDefaults] setObject:smtpAddress forKey:SMTPAddress_KEY];
-//            [[NSUserDefaults standardUserDefaults] setObject:smtpPort forKey:SMTPPort_KEY];
-//            
-//            //关闭之前的连接，重建连接
-//            MCOIMAPOperation *op = [self.imapSession disconnectOperation];
-//            [op start:^(NSError * __nullable error) {
-//                NSLog(@"disconnectOperation:%@", error);
-//            }];
-//            self.imapSession = nil;
-//            
-//            //重新建立连接
-//            //设置服务器地址和端口
-//            self.imapSession.hostname = imapAddress;
-//            self.imapSession.port = [imapPort unsignedIntValue];
-//            
-//            HikContactsInfoRecord *accountInfoRecord = [HikAccountInfoManager sharedInstance].accountInfoRecord;
-//            self.imapSession.username = accountInfoRecord.inmailAddress;
-//            
-//            NSString *mailPassword = [[NSUserDefaults standardUserDefaults] stringForKey:MailPassword_KEY];
-//            if (mailPassword) {
-//                NSString *password = [RSA decryptString:mailPassword publicKey:publickey];
-//                self.imapSession.password = password;
-//                
-//                dispatch_async(dispatch_get_main_queue(), ^{
-//                    if (!self.checkTimer) {
-//                        self.checkTimer = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(checkInboxNewMessage) userInfo:nil repeats:YES];//timer自动添加到NSDefaultRunLoopMode中去执行
-//                        [self.checkTimer fire];//马上执行一次
-//                    }
-//                });
-//            } else {
-//                [self.passwordDecryptApiManager loadData];
-//            }
-//        } else {
-//            
-//        }
-//    } else {
-//        NSString *data = [dic objectForKey:@"data"];
-//        [[NSUserDefaults standardUserDefaults] setValue:data forKey:MailPassword_KEY];
-//        
-//        NSString *password = [RSA decryptString:data publicKey:publickey];
-//        self.imapSession.password = password;
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            if (!self.checkTimer.isValid) {
-//                self.checkTimer = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(checkInboxNewMessage) userInfo:nil repeats:YES];//timer自动添加到NSDefaultRunLoopMode中去执行
-//                [self.checkTimer fire];
-//            }
-//        });
-//    }
-//}
-
-//- (void)managerCallAPIDidFailed:(CTAPIBaseManager *)manager {
-//    if (manager == self.configApiManager) {//邮箱配置
-////        NSString *host = [[NSUserDefaults standardUserDefaults] stringForKey:IMAPAddress_KEY];
-////        if (IsEmptyString(host)) {
-////            [self.configApiManager loadData];
-////        }
-//    } else {//邮箱密码
-//        NSString *mailPassword = [[NSUserDefaults standardUserDefaults] stringForKey:MailPassword_KEY];
-//        if (IsEmptyString(mailPassword)) {
-//            [self.passwordDecryptApiManager loadData];
-//        }
-//    }
-//}
-
-//#pragma mark - CTAPIManagerParamSource
-//
-//- (NSDictionary *)paramsForApi:(CTAPIBaseManager *)manager {
-//    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-//    if (manager == self.passwordDecryptApiManager) {
-//        NSString *rsaPassword = [[NSUserDefaults standardUserDefaults] valueForKey:Password_KEY];
-//        [dic setValue:rsaPassword forKey:@"text"];
-//    }
-//    
-//    return dic;
-//}
 
 #pragma mark - private method
 
