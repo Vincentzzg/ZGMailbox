@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-//#import <MailCore/MCOSMTPSendOperation.h>
-
 /**
  *  消息的状态
  */

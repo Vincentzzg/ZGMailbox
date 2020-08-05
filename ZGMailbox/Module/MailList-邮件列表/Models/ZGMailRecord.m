@@ -60,17 +60,17 @@
                 }
             }];
             self.receiver = [receiverDisplayNameArray componentsJoinedByString:@"、"];
-
+            
             //收件人头像展示
-//            MCOAddress *firstReceiver = [receiverArray firstObject];
-//            NSString *firstReceiverName = [[firstReceiver.mailbox componentsSeparatedByString:@"@"] firstObject];
+            //            MCOAddress *firstReceiver = [receiverArray firstObject];
+            //            NSString *firstReceiverName = [[firstReceiver.mailbox componentsSeparatedByString:@"@"] firstObject];
             self.receiverPortrait = nil;
         }
         
         self.messageID = message.header.messageID;
         self.subject = message.header.subject;
         self.date = message.header.receivedDate;
-
+        
         self.isUnread = !(message.flags & MCOMessageFlagSeen);
         self.isReply = message.flags & MCOMessageFlagAnswered;
         self.isForwarded = message.flags & MCOMessageFlagForwarded;
@@ -115,28 +115,22 @@
                 }
             }];
             self.receiver = [receiverDisplayNameArray componentsJoinedByString:@"、"];
-
+            
             //收件人头像展示
             MCOAddress *firstReceiver = [receiverArray firstObject];
             NSString *firstReceiverShortName = [[firstReceiver.mailbox componentsSeparatedByString:@"@"] firstObject];
-//            HikContactsInfoDataCenter *contactsInfoDataCenter = [[HikContactsInfoDataCenter alloc] init];
-//            HikContactsInfoRecord *receiverInfoRecord = [contactsInfoDataCenter findContactInContactsTableWithShortName:firstReceiverShortName];
-//            if (receiverInfoRecord) {
-//                self.receiverPortrait = receiverInfoRecord.portrait;
-//            } else {
-                self.receiverPortrait = nil;
-//            }
+            self.receiverPortrait = nil;
         } else {
             self.receiver = @"";
             self.receiverPortrait = nil;
         }
-
-//        self.sender = str;
-
+        
+        //        self.sender = str;
+        
         self.messageID = message.header.messageID;
         self.subject = message.header.subject;
         self.date = message.header.date;
-
+        
         self.isUnread = NO;
         self.isReply = NO;
         self.isForwarded = NO;

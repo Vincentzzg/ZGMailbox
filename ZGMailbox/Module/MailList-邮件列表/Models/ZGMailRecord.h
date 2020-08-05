@@ -6,14 +6,12 @@
 //  Copyright © 2017年 zzg. All rights reserved.
 //
 
-#import <CTPersistance/CTPersistance.h>
+#import <Foundation/Foundation.h>
 
 @class MCOIMAPMessage;
 @class ZGMailMessage;
 
-@interface ZGMailRecord : CTPersistanceRecord
-
-@property (nonatomic, strong) NSNumber *primaryKey;//主键
+@interface ZGMailRecord : NSObject
 
 @property (nonatomic, copy) NSString *messageID;
 

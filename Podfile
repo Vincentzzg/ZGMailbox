@@ -13,7 +13,6 @@ target 'ZGMailbox' do
     pod 'MJRefresh'#下拉刷新
     pod 'MyLayout' #流式布局
 #    pod 'mailcore2-ios'#邮件协议
-    pod 'CTPersistance'#数据库
     pod 'TTTAttributedLabel'#富文本
     pod 'pop'#动画库
     pod 'TZImagePickerController'#图片选择器

@@ -15,7 +15,6 @@
 
 /***** 开源库 */
 #import <Masonry/Masonry.h>
-#import <CTPersistance/CTPersistance.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
 /** 分类 */

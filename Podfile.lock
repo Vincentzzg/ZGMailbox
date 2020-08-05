@@ -1,8 +1,4 @@
 PODS:
-  - CTMediator (12)
-  - CTPersistance (152):
-    - CTMediator
-    - SQLCipher
   - DACircularProgress (2.3.1)
   - DZNEmptyDataSet (1.8.1)
   - Masonry (1.1.0)
@@ -13,16 +9,10 @@ PODS:
   - SDWebImage (4.2.1):
     - SDWebImage/Core (= 4.2.1)
   - SDWebImage/Core (4.2.1)
-  - SQLCipher (3.4.1):
-    - SQLCipher/standard (= 3.4.1)
-  - SQLCipher/common (3.4.1)
-  - SQLCipher/standard (3.4.1):
-    - SQLCipher/common
   - TTTAttributedLabel (2.0.0)
   - TZImagePickerController (1.9.3)
 
 DEPENDENCIES:
-  - CTPersistance
   - DACircularProgress
   - DZNEmptyDataSet
   - Masonry
@@ -36,8 +26,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - CTMediator
-    - CTPersistance
     - DACircularProgress
     - DZNEmptyDataSet
     - Masonry
@@ -46,13 +34,10 @@ SPEC REPOS:
     - MyLayout
     - pop
     - SDWebImage
-    - SQLCipher
     - TTTAttributedLabel
     - TZImagePickerController
 
 SPEC CHECKSUMS:
-  CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
-  CTPersistance: e5d4f8b5ca78316f822dc9d419cccde34b20a391
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -61,10 +46,9 @@ SPEC CHECKSUMS:
   MyLayout: a80c782879ab1d689b737f7f3373fbf66407941d
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
-  SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
 
-PODFILE CHECKSUM: c6d34089f46d21f050a6e481bdf260097a0cca60
+PODFILE CHECKSUM: 98ab81f80f0d0e7ed473ef222ba33042981b4b2a
 
 COCOAPODS: 1.9.3
